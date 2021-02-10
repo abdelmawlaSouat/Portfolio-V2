@@ -4,14 +4,14 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-10 9:05:56 pm
+ * Last Modified: 2021-02-10 9:37:25 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
-import Head from "next/head";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head';
+import Navbar from '../components/Navbar';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
