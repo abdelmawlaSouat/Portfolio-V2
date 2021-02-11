@@ -1,0 +1,11 @@
+.linksList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.linksList li {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
