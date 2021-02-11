@@ -1,11 +1,36 @@
-/* .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  margin: 2rem 15%;
 }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 15vh 0;
+}
+
+.content article {
+  padding-top: 2rem;
+}
+
+.content .name {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.content .job {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 1rem 0 2rem 0;
+}
+.content .socialIcons svg {
+  margin: 0 0.5rem;
+}
+.svg {
+  fill: #4c4f65;
+}
+
+/* 
 
 .main {
   padding: 5rem 0;
