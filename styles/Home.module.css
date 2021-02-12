@@ -41,9 +41,6 @@
 .content .socialIcons svg {
   margin: 0 0.5rem;
 }
-.svg {
-  fill: var(--color-txt);
-}
 
 @keyframes wordSwitcher {
   0% {
@@ -63,5 +60,71 @@
   }
   100% {
     margin-top: -40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column-reverse;
+    margin: 6vh 0;
+  }
+
+  .content article {
+    text-align: center;
+  }
+
+  .content .job {
+    justify-content: center;
+    text-align: initial;
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  .content .name {
+    font-size: 3.3rem;
+  }
+  .content .job {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 1rem 1.5rem;
+  }
+
+  .content .name {
+    font-size: 2.2rem;
+  }
+
+  .content .job {
+    font-size: 1.2rem;
+  }
+
+  .container .jobsListContainer {
+    height: 25px;
+    margin-top: 7px;
+  }
+
+  @keyframes wordSwitcher {
+    0% {
+      margin-top: 0px;
+    }
+    5% {
+      margin-top: -25px;
+    }
+    50% {
+      margin-top: -25px;
+    }
+    55% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -25px;
+    }
   }
 }

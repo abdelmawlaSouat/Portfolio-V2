@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-12 3:23:16 pm
+ * Last Modified: 2021-02-12 7:21:01 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -13,7 +13,6 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-// import clsx from 'clsx';
 
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
@@ -90,18 +89,18 @@ export default function Home() {
             </div>
 
             <div className={styles.socialIcons}>
-              <Link href="/">
-                <a>
+              <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
+                <a target="_blank">
                   <LinkedinIcon className={styles.svg} width="40" height="40" />
                 </a>
               </Link>
-              <Link href="/">
-                <a>
+              <Link href="https://github.com/abdelmawlaSouat">
+                <a target="_blank">
                   <GithubIcon className={styles.svg} width="40" height="40" />
                 </a>
               </Link>
               <Link href="/">
-                <a>
+                <a target="_blank">
                   <CvIcon className={styles.svg} width="40" height="40" />
                 </a>
               </Link>
