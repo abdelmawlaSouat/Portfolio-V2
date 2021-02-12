@@ -4,12 +4,12 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-12 7:21:01 pm
+ * Last Modified: 2021-02-12 10:03:46 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -31,27 +31,15 @@ const navLinks = [
 export default function Home() {
   const [theme, setTheme] = useState('null');
 
-  function paco(themeType) {
+  function applyTheme(themeType) {
     document.documentElement.className = themeType;
     setTheme(themeType);
   }
 
-  useEffect(() => {
-    if (!localStorage.getItem('theme')) {
-      const themeType = 'lightTheme';
-
-      localStorage.setItem('theme', themeType);
-      paco(themeType);
-    } else {
-      paco(localStorage.getItem('theme'));
-    }
-  }, []);
-
   function switchTheme() {
     const themeType = theme === 'lightTheme' ? 'darkTheme' : 'lightTheme';
-
     localStorage.setItem('theme', themeType);
-    paco(themeType);
+    applyTheme(themeType);
   }
 
   return (
@@ -66,12 +54,7 @@ export default function Home() {
           <Navbar links={navLinks} />
           <Link href="/">
             <a>
-              <ThemeSwitcherIcon
-                className={styles.svg}
-                width="30"
-                height="30"
-                onClick={switchTheme}
-              />
+              <ThemeSwitcherIcon width="30" height="30" onClick={switchTheme} />
             </a>
           </Link>
         </header>
@@ -91,26 +74,27 @@ export default function Home() {
             <div className={styles.socialIcons}>
               <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
                 <a target="_blank">
-                  <LinkedinIcon className={styles.svg} width="40" height="40" />
+                  <LinkedinIcon width="40" height="40" />
                 </a>
               </Link>
               <Link href="https://github.com/abdelmawlaSouat">
                 <a target="_blank">
-                  <GithubIcon className={styles.svg} width="40" height="40" />
+                  <GithubIcon width="40" height="40" />
                 </a>
               </Link>
               <Link href="/">
                 <a target="_blank">
-                  <CvIcon className={styles.svg} width="40" height="40" />
+                  <CvIcon width="40" height="40" />
                 </a>
               </Link>
             </div>
           </article>
           <Image
+            className={styles.profile}
             src="/images/profile.jpg"
             alt="Profile"
-            width="480"
-            height="480"
+            width="480px"
+            height="480px"
           />
         </section>
       </main>

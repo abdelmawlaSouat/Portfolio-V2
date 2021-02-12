@@ -42,6 +42,11 @@
   margin: 0 0.5rem;
 }
 
+.profile {
+  width: 480px;
+  height: 480px;
+}
+
 @keyframes wordSwitcher {
   0% {
     margin-top: 0px;
@@ -87,24 +92,29 @@
   .content .job {
     font-size: 2rem;
   }
+  .profile {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .container {
     margin: 1rem 1.5rem;
   }
-
   .content .name {
     font-size: 2.2rem;
   }
-
   .content .job {
     font-size: 1.2rem;
   }
-
   .container .jobsListContainer {
     height: 25px;
     margin-top: 7px;
+  }
+  .profile {
+    width: 300px;
+    height: 300px;
   }
 
   @keyframes wordSwitcher {
