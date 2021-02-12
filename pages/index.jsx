@@ -4,14 +4,16 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-11 1:30:00 pm
+ * Last Modified: 2021-02-12 3:23:16 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+// import clsx from 'clsx';
 
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
@@ -28,6 +30,31 @@ const navLinks = [
 ];
 
 export default function Home() {
+  const [theme, setTheme] = useState('null');
+
+  function paco(themeType) {
+    document.documentElement.className = themeType;
+    setTheme(themeType);
+  }
+
+  useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      const themeType = 'lightTheme';
+
+      localStorage.setItem('theme', themeType);
+      paco(themeType);
+    } else {
+      paco(localStorage.getItem('theme'));
+    }
+  }, []);
+
+  function switchTheme() {
+    const themeType = theme === 'lightTheme' ? 'darkTheme' : 'lightTheme';
+
+    localStorage.setItem('theme', themeType);
+    paco(themeType);
+  }
+
   return (
     <div>
       <Head>
@@ -44,6 +71,7 @@ export default function Home() {
                 className={styles.svg}
                 width="30"
                 height="30"
+                onClick={switchTheme}
               />
             </a>
           </Link>
@@ -51,7 +79,16 @@ export default function Home() {
         <section className={styles.content}>
           <article>
             <h1 className={styles.name}>Souat Abdelmawla</h1>
-            <h3 className={styles.job}>I&apos;m a Frontend Developer</h3>
+            <div className={styles.job}>
+              <span>I&apos;m a </span>
+              <div className={styles.jobsListContainer}>
+                <ul className={styles.jobsList}>
+                  <li>Frontend Developer</li>
+                  <li>Freelancer</li>
+                </ul>
+              </div>
+            </div>
+
             <div className={styles.socialIcons}>
               <Link href="/">
                 <a>
