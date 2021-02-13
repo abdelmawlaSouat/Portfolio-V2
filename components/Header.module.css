@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.titles h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.titles h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 10px 0;
+}
+.closeIcon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .titles h1 {
+    font-size: 3rem;
+  }
+  .titles h2 {
+    font-size: 1.2rem;
+  }
+  .closeIcon {
+    top: 20px;
+    right: 20px;
+  }
+  .closeIcon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
