@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-02-12 10:57:41 pm
+ * Last Modified: 2021-02-13 2:34:02 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -12,12 +12,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import Header from '../components/Header';
 import styles from '../styles/AboutMe.module.css';
 
 import LinkedinIcon from '../public/images/linkedin.svg';
 import GithubIcon from '../public/images/github.svg';
-import CloseIcon from '../public/images/cancel.svg';
 
 export default function AboutMe() {
   return (
@@ -26,17 +25,7 @@ export default function AboutMe() {
         <title>About me</title>
       </Head>
       <main className={styles.container}>
-        <header>
-          <div className={styles.titles}>
-            <h2>Get to know me</h2>
-            <h1>About me.</h1>
-          </div>
-          <Link href="/">
-            <a className={styles.closeIcon}>
-              <CloseIcon width="30" height="30" />
-            </a>
-          </Link>
-        </header>
+        <Header title="About me." subtitle="Get to know me" />
         <section>
           <Image
             src="/images/profile.jpg"
@@ -71,9 +60,7 @@ export default function AboutMe() {
               </div>
             </div>
             <div className={styles.articleFooter}>
-              <button className={styles.btn} type="button">
-                Download CV
-              </button>
+              <button type="button">Download CV</button>
               <div className={styles.socialIcons}>
                 <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
                   <a target="_blank">
