@@ -4,12 +4,11 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-12 10:03:46 pm
+ * Last Modified: 2021-02-13 9:43:24 am
  * -----
  * Copyright (c) 2021 Yuei
  */
 
-import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,17 +28,13 @@ const navLinks = [
 ];
 
 export default function Home() {
-  const [theme, setTheme] = useState('null');
-
-  function applyTheme(themeType) {
-    document.documentElement.className = themeType;
-    setTheme(themeType);
-  }
-
   function switchTheme() {
-    const themeType = theme === 'lightTheme' ? 'darkTheme' : 'lightTheme';
-    localStorage.setItem('theme', themeType);
-    applyTheme(themeType);
+    const theme =
+      localStorage.getItem('theme') === 'lightTheme'
+        ? 'darkTheme'
+        : 'lightTheme';
+    localStorage.setItem('theme', theme);
+    document.documentElement.className = theme;
   }
 
   return (
