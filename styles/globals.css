@@ -29,12 +29,16 @@ svg {
 
 .lightTheme {
   --color-bg: #f3f3f3;
+  --secondary-bg: white;
   --color-txt: #4c4f65;
+  --secondary: #c4c4c4;
 }
 
 .darkTheme {
   --color-bg: #1c1d25;
+  --secondary-bg: #2d2e34;
   --color-txt: #f3f3f3;
+  --secondary: #c4c4c4;
 }
 
 button {
