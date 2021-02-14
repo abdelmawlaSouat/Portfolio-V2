@@ -1,0 +1,75 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-bg);
+  width: 65%;
+  /* margin: 0 10rem; */
+  padding: 4rem 1rem;
+}
+
+.content article {
+  margin: 0 2rem;
+  width: 50%;
+}
+
+.skill {
+  margin: 0.5rem;
+}
+
+.skillsList {
+  padding: 1rem 0;
+}
+
+.content article h3 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.content h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.content ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.content ul li {
+  margin: 0 1rem 0 0;
+}
+
+.btnsDiv {
+  margin-top: 2rem;
+}
+.btnsDiv button {
+  font-size: 0.8rem;
+  margin: 0 1rem 0 0;
+  padding: 10px 15px;
+}
