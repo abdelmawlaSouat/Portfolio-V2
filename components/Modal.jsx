@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 11:05:45 pm
- * Last Modified: 2021-02-14 9:26:25 pm
+ * Last Modified: 2021-02-16 7:06:21 am
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -27,7 +27,9 @@ export default function Modal({ isOpen, handleBool, data }) {
           height="25"
         />
 
-        <Slider items={data.gallery} />
+        <div className={styles.sliderContainer}>
+          <Slider items={data.gallery} />
+        </div>
 
         <article>
           <h3>{data.name}</h3>

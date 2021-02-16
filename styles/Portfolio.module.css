@@ -20,6 +20,11 @@
 .card:hover {
   cursor: pointer;
 }
+@media all and (min-width: 1025px) and (max-width: 1650px) {
+  .container section {
+    margin: 2rem 10%;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .container {
