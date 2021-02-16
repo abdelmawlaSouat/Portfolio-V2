@@ -58,6 +58,17 @@
   margin: 1rem 2px;
 }
 
+@media all and (min-width: 650px) and (max-width: 1024px) {
+  .slider {
+    width: 600px;
+  }
+
+  .slides div {
+    width: 600px;
+    height: 600px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .links {
     display: none;
