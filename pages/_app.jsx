@@ -4,16 +4,18 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-02-13 9:44:44 am
+ * Last Modified: 2021-03-22 10:05:30 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import { useEffect } from 'react';
+
+import Footer from '../components/Footer';
 import '../styles/globals.css';
 
 // eslint-disable-next-line react/prop-types
-function MyApp({ Component, pageProps }) {
+function Portfolio({ Component, pageProps }) {
   useEffect(() => {
     if (!localStorage.getItem('theme')) {
       const themeType = 'lightTheme';
@@ -25,8 +27,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <div>
+      <Component {...pageProps} />
+      <Footer name="Souat Abdelmawla" />
+    </div>
+  );
 }
 
-export default MyApp;
+export default Portfolio;
