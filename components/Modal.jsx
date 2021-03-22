@@ -4,27 +4,26 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 11:05:45 pm
- * Last Modified: 2021-02-16 7:06:21 am
+ * Last Modified: 2021-03-22 8:00:54 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { Chip } from '@material-ui/core';
+import { AiOutlineClose } from 'react-icons/ai';
 
 import Slider from './Slider';
 import styles from './Modal.module.css';
-import CloseIcon from '../public/images/cancel.svg';
 
 export default function Modal({ isOpen, handleBool, data }) {
   return (
     <div className={clsx(styles.container, !isOpen ? styles.hidden : '')}>
       <div className={styles.content}>
-        <CloseIcon
+        <AiOutlineClose
+          size="40"
           className={styles.closeIcon}
           onClick={handleBool}
-          width="25"
-          height="25"
         />
 
         <div className={styles.sliderContainer}>

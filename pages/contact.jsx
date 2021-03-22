@@ -4,19 +4,17 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:51:18 am
- * Last Modified: 2021-02-13 9:05:20 pm
+ * Last Modified: 2021-03-22 9:27:35 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import Head from 'next/head';
 import Link from 'next/link';
+import { FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
+import { IoMdSend } from 'react-icons/io';
 import Header from '../components/Header';
 import styles from '../styles/Contact.module.css';
-
-import PhoneIcon from '../public/images/phone-call.svg';
-import LinkedinIcon from '../public/images/linkedin-1.svg';
-import EmailIcon from '../public/images/sent.svg';
 
 export default function Contact() {
   return (
@@ -56,7 +54,7 @@ export default function Contact() {
               <Link href="tel:+32484697707">
                 <a target="_blank">
                   <div className={styles.contactType}>
-                    <PhoneIcon width="30" height="30" />
+                    <FaPhoneAlt size="30" />
                     <div className={styles.contactLink}>
                       <span className={styles.boldTxt}>Call me</span>
                       <span>+32 484 69 77 07</span>
@@ -68,7 +66,7 @@ export default function Contact() {
               <Link href="mailto:abdelmawla.souat@gmail.com">
                 <a target="_blank">
                   <div className={styles.contactType}>
-                    <EmailIcon width="30" height="30" />
+                    <IoMdSend size="30" />
                     <div className={styles.contactLink}>
                       <span className={styles.boldTxt}>Email me</span>
                       <span>abdelmawla.souat@gmail.com</span>
@@ -80,7 +78,7 @@ export default function Contact() {
               <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
                 <a target="_blank">
                   <div className={styles.contactType}>
-                    <LinkedinIcon width="30" height="30" />
+                    <FaLinkedinIn size="30" />
                     <div className={styles.contactLink}>
                       <span className={styles.boldTxt}>Connect with me</span>
                       <span>Abdelmawla Souat</span>

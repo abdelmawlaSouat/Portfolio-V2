@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-02-13 2:34:02 pm
+ * Last Modified: 2021-03-22 8:17:33 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -12,11 +12,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Header from '../components/Header';
 import styles from '../styles/AboutMe.module.css';
-
-import LinkedinIcon from '../public/images/linkedin.svg';
-import GithubIcon from '../public/images/github.svg';
 
 export default function AboutMe() {
   return (
@@ -64,12 +62,12 @@ export default function AboutMe() {
               <div className={styles.socialIcons}>
                 <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
                   <a target="_blank">
-                    <LinkedinIcon width="30" height="30" />
+                    <FaLinkedin size="30" />
                   </a>
                 </Link>
                 <Link href="https://github.com/abdelmawlaSouat">
                   <a target="_blank">
-                    <GithubIcon width="30" height="30" />
+                    <FaGithub size="30" />
                   </a>
                 </Link>
               </div>

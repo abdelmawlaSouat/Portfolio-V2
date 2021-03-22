@@ -42,6 +42,10 @@
   margin: 0 0.5rem;
 }
 
+.header svg {
+  cursor: pointer;
+}
+
 .profile {
   width: 480px;
   height: 480px;
