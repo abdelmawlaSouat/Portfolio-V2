@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:51:18 am
- * Last Modified: 2021-03-24 11:43:44 am
+ * Last Modified: 2021-03-24 7:15:33 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -12,12 +12,32 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import Alert from '@material-ui/lab/Alert';
+import axios from 'axios';
 import { FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
 import Header from '../components/Header';
 import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailMessage, setShowFailMessage] = useState(false);
+
+  const { register, handleSubmit } = useForm();
+  const sendEmail = (data) => {
+    axios.post('/api/send-mail', data).then((response) => {
+      if (response.data.msg === 'success') {
+        setShowSuccessMessage(true);
+        setShowFailMessage(false);
+      } else if (response.data.msg === 'fail') {
+        setShowSuccessMessage(false);
+        setShowFailMessage(true);
+      }
+    });
+  };
+
   return (
     <div>
       <Head>
@@ -35,21 +55,55 @@ export default function Contact() {
           subtitle="Feel free to contact me anytimes"
         />
         <section>
-          <form>
+          <form onSubmit={handleSubmit(sendEmail)}>
             <h3>Message Me</h3>
-            <div>
-              <input type="text" name="name" id="" placeholder="Name" />
-              <input type="email" name="email" id="" placeholder="Email" />
+            <div className={styles.alert}>
+              {showSuccessMessage && (
+                <Alert severity="success" variant="filled">
+                  Thank you for your message ! I’ll get back to you as soon as
+                  possible !
+                </Alert>
+              )}
+
+              {showFailMessage && (
+                <Alert severity="error" variant="filled">
+                  Oops, something went wrong. Try again
+                </Alert>
+              )}
             </div>
-            <input type="text" name="subject" id="" placeholder="Subject" />
+
+            <div>
+              <input
+                type="text"
+                name="name"
+                ref={register}
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                ref={register}
+                placeholder="Email"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              name="subject"
+              ref={register}
+              placeholder="Subject"
+              required
+            />
             <textarea
               name="message"
-              id=""
+              ref={register}
               cols="30"
               rows="10"
               placeholder="Message"
+              required
             />
-            <button type="button">Send Message</button>
+            <button type="submit">Send Message</button>
           </form>
           <aside>
             <h3>Contact info</h3>

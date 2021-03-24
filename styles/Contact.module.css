@@ -24,6 +24,10 @@
   font-weight: bold;
 }
 
+.alert {
+  margin: 10px 0;
+}
+
 .container section form {
   display: flex;
   flex-direction: column;
@@ -33,6 +37,11 @@
 .container section form button {
   align-self: flex-end;
   margin-right: 0.5rem;
+}
+
+.container section form input,
+.container section form textarea {
+  color: white;
 }
 
 .contactType {
