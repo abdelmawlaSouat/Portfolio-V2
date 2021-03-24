@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-03-22 7:37:08 pm
- * Last Modified: 2021-03-24 6:21:43 pm
+ * Last Modified: 2021-03-24 7:45:36 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -42,7 +42,7 @@ export default (req, res) => {
 
   transporter.sendMail(mail, (err) => {
     if (err) {
-      res.status(502).json({ msg: 'fail' });
+      res.json({ msg: 'fail' });
     } else {
       res.status(200).json({ msg: 'success' });
     }
