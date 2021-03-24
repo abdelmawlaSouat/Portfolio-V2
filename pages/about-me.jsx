@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-03-24 11:42:36 am
+ * Last Modified: 2021-03-24 4:34:27 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -65,7 +65,11 @@ export default function AboutMe() {
               </div>
             </div>
             <div className={styles.articleFooter}>
-              <button type="button">Download CV</button>
+              <Link href="/files/Souat Abdelmawla - ENG.pdf">
+                <a target="_blank">
+                  <button type="button">Download CV</button>
+                </a>
+              </Link>
               <div className={styles.socialIcons}>
                 <Link href="https://www.linkedin.com/in/abdelmawla-souat/">
                   <a target="_blank">

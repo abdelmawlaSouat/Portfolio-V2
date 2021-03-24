@@ -4,13 +4,12 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-03-24 12:11:53 pm
+ * Last Modified: 2021-03-24 4:06:58 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import { useEffect } from 'react';
-
 import Footer from '../components/Footer';
 import '../styles/globals.css';
 
