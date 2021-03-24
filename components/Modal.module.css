@@ -37,10 +37,6 @@
   font-size: 3rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .closeIcon {
   position: absolute;
   top: 20px;

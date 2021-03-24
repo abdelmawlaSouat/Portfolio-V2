@@ -4,13 +4,14 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:59:52 pm
- * Last Modified: 2021-02-14 9:16:49 pm
+ * Last Modified: 2021-03-24 12:10:48 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import { useState } from 'react';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Modal from '../components/Modal';
 import styles from '../styles/Portfolio.module.css';
@@ -38,7 +39,13 @@ export default function Portfolio() {
       <Head>
         <title>Porfolio</title>
       </Head>
-      <main className={!isOpen ? styles.container : styles.hidden}>
+      <motion.main
+        className={!isOpen ? styles.container : styles.hidden}
+        initial={{ y: -300 }}
+        animate={{ y: 0 }}
+        exit={{ y: 300 }}
+        transition={{ ease: 'easeOut', duration: 0.3 }}
+      >
         <Header title="Portfolio" subtitle="Showcasing some of my best work" />
         <section>
           {projects.map((item) => (
@@ -50,7 +57,7 @@ export default function Portfolio() {
             />
           ))}
         </section>
-      </main>
+      </motion.main>
       <Modal
         isOpen={isOpen}
         handleBool={() => setIsOpen(!isOpen)}

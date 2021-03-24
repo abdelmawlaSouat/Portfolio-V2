@@ -4,13 +4,14 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:51:18 am
- * Last Modified: 2021-03-22 9:27:35 pm
+ * Last Modified: 2021-03-24 11:43:44 am
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import Head from 'next/head';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
 import Header from '../components/Header';
@@ -22,7 +23,13 @@ export default function Contact() {
       <Head>
         <title>Contact me</title>
       </Head>
-      <main className={styles.container}>
+      <motion.main
+        className={styles.container}
+        initial={{ y: -300 }}
+        animate={{ y: 0 }}
+        exit={{ y: 300 }}
+        transition={{ ease: 'easeOut', duration: 0.3 }}
+      >
         <Header
           title="Get in Touch."
           subtitle="Feel free to contact me anytimes"
@@ -89,7 +96,7 @@ export default function Contact() {
             </div>
           </aside>
         </section>
-      </main>
+      </motion.main>
     </div>
   );
 }

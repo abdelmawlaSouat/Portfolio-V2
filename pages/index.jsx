@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-03-22 9:22:52 pm
+ * Last Modified: 2021-03-24 12:10:40 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -12,6 +12,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiOutlineFilePdf } from 'react-icons/ai';
 import { WiMoonAltThirdQuarter } from 'react-icons/wi';
@@ -42,7 +43,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.container}>
+      <motion.main
+        className={styles.container}
+        initial={{ y: 300 }}
+        animate={{ y: 0 }}
+        exit={{ y: -300 }}
+        transition={{ ease: 'easeOut', duration: 0.3 }}
+      >
         <header className={styles.header}>
           <Navbar links={navLinks} />
           <WiMoonAltThirdQuarter size="40" onClick={switchTheme} />
@@ -86,7 +93,7 @@ export default function Home() {
             height="480px"
           />
         </section>
-      </main>
+      </motion.main>
     </div>
   );
 }

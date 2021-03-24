@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-03-22 8:17:33 pm
+ * Last Modified: 2021-03-24 11:42:36 am
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -12,6 +12,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Header from '../components/Header';
 import styles from '../styles/AboutMe.module.css';
@@ -22,7 +23,13 @@ export default function AboutMe() {
       <Head>
         <title>About me</title>
       </Head>
-      <main className={styles.container}>
+      <motion.main
+        className={styles.container}
+        initial={{ y: -300 }}
+        animate={{ y: 0 }}
+        exit={{ y: 300 }}
+        transition={{ ease: 'easeOut', duration: 0.3 }}
+      >
         <Header title="About me." subtitle="Get to know me" />
         <section>
           <Image
@@ -74,7 +81,7 @@ export default function AboutMe() {
             </div>
           </article>
         </section>
-      </main>
+      </motion.main>
     </div>
   );
 }
