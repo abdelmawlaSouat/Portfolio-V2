@@ -41,7 +41,7 @@
 
 .container section form input,
 .container section form textarea {
-  color: white;
+  color: var(--color-txt);
 }
 
 .contactType {
