@@ -24,7 +24,7 @@
     display: inherit;
   }
   .mobileMenu {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -36,10 +36,6 @@
     height: 100%;
     z-index: 999;
     transition: all 0.5s ease;
-  }
-
-  .visibleNav {
-    display: flex;
   }
 
   .mobileMenu .svg {
