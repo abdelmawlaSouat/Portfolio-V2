@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:42:49 pm
- * Last Modified: 2021-03-26 10:55:03 am
+ * Last Modified: 2021-03-26 11:13:35 am
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -20,17 +20,27 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import styles from './Navbar.module.css';
 
 export default function Navbar({ links }) {
-  const [visibleNav, setVisibleNav] = useState(false);
+  const [visibleMobileNav, setVisibleMobileNav] = useState(false);
   return (
     <nav>
       <HiOutlineMenuAlt3
         className={clsx(styles.menuIcon, styles.svg)}
         size="30"
-        onClick={() => setVisibleNav(!visibleNav)}
+        onClick={() => setVisibleMobileNav(!visibleMobileNav)}
       />
 
+      <ul className={styles.linksList}>
+        {links.map((link) => (
+          <li key={link.idx}>
+            <Link href={link.route}>
+              <a>{link.name}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
       <AnimatePresence>
-        {visibleNav && (
+        {visibleMobileNav && (
           <motion.div
             className={clsx(styles.mobileMenu)}
             initial={{ opacity: 0, x: -300 }}
@@ -41,7 +51,7 @@ export default function Navbar({ links }) {
             <AiOutlineClose
               size="50"
               className={clsx(styles.svg)}
-              onClick={() => setVisibleNav(!visibleNav)}
+              onClick={() => setVisibleMobileNav(!visibleMobileNav)}
             />
             <ul className={styles.linksList}>
               {links.map((link) => (
