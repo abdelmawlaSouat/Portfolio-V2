@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:59:52 pm
- * Last Modified: 2021-03-24 12:10:48 pm
+ * Last Modified: 2021-03-26 6:05:14 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -49,11 +49,14 @@ export default function Portfolio() {
         <Header title="Portfolio" subtitle="Showcasing some of my best work" />
         <section>
           {projects.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className={styles.card}
               onClick={() => generateModal(item)}
               aria-hidden="true"
+              whileHover={{
+                scale: 1.07,
+              }}
             />
           ))}
         </section>

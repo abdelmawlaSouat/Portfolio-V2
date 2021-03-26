@@ -11,15 +11,7 @@
   -webkit-overflow-scrolling: touch;
 }
 .slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.slides::-webkit-scrollbar-thumb {
-  background: var(--color-txt);
-  border-radius: 10px;
-}
-.slides::-webkit-scrollbar-track {
-  background: transparent;
+  display: none;
 }
 .slides div {
   scroll-snap-align: start;
@@ -46,16 +38,19 @@
   justify-content: center;
   align-items: center;
 }
-.links a {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #e0e0e0;
-  color: #4c4f65;
+.links a div {
+  width: 12px;
+  height: 12px;
+  background: var(--color-txt);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 1rem 2px;
+  margin: 1rem 4px;
+}
+
+.links a .activeSlide {
+  background: darkcyan;
 }
 
 @media all and (min-width: 650px) and (max-width: 1024px) {
