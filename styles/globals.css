@@ -17,6 +17,13 @@ a {
   box-sizing: border-box;
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   display: flex;
   align-items: center;
