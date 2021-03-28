@@ -4,12 +4,13 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 11:05:45 pm
- * Last Modified: 2021-03-26 6:23:16 pm
+ * Last Modified: 2021-03-28 3:57:25 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import { Chip } from '@material-ui/core';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -23,9 +24,9 @@ export default function Modal({ isOpen, handleBool, data }) {
       {isOpen && (
         <motion.div
           className={clsx(styles.container)}
-          initial={{ opacity: 0, scale: 0.75 }}
+          initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0 }}
+          exit={{ opacity: 0, scale: 1 }}
         >
           <div className={styles.content}>
             <AiOutlineClose
@@ -53,8 +54,16 @@ export default function Modal({ isOpen, handleBool, data }) {
               </div>
 
               <div className={styles.btnsDiv}>
-                <button type="button">Go to Site</button>
-                <button type="button">Go in Github</button>
+                <Link href={data.siteLink}>
+                  <a target="_blank">
+                    <button type="button">Go to Site</button>
+                  </a>
+                </Link>
+                <Link href={data.githubLink}>
+                  <a target="_blank">
+                    <button type="button">Go in Github</button>
+                  </a>
+                </Link>
               </div>
             </article>
           </div>

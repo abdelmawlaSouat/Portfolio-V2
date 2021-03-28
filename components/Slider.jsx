@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-14 7:22:23 pm
- * Last Modified: 2021-03-26 7:02:38 pm
+ * Last Modified: 2021-03-28 4:00:20 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -23,10 +23,9 @@ export default function Slider({ items }) {
         {items.map((item) => (
           <div key={item.id} id={`slide${item.id}`}>
             <Image
-              src={item.path}
-              alt="Screenshot"
-              width="auto"
-              height="auto"
+              src={`/images/projects/${item.path}`}
+              alt={item.name}
+              layout="fill"
             />
           </div>
         ))}

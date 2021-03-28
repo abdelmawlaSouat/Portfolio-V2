@@ -1,173 +1,75 @@
 [
   {
     "id": 1,
-    "name": "Project 1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
+    "name": "IP Address Tracker",
+    "description": "This app is used to track an ip address. The user has 2 options, first he can set an ip address via the input field or the second, the app will track his position. After that, the app show his location, his timezone and his internet service provider.",
     "skills": [
       { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
+      { "id": 2, "name": "State & Effect Hooks" },
+      { "id": 3, "name": "HTML5" },
+      { "id": 4, "name": "CSS3" },
+      { "id": 5, "name": "Material UI" },
+      { "id": 6, "name": "Axios" },
+      { "id": 7, "name": "Mapbox" }
     ],
     "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
+      { "id": 1, "path": "ip-address-tracker-desktop.jpg" },
+      { "id": 2, "path": "ip-address-tracker-mobile.jpg" }
     ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
+    "githubLink": "https://github.com/abdelmawlaSouat/Ip-Address-Tracker",
+    "siteLink": "https://ip-address-tracker-smoky-one.vercel.app/"
   },
   {
     "id": 2,
-    "name": "Project 2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
+    "name": "Todo App",
+    "description": "The user can add new todos to the list, mark todos as complete, delete todos from the list, filter by all/active/complete todos, clear all completed todos and toggle light and dark mode.",
     "skills": [
       { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
+      { "id": 2, "name": "State & Effect Hooks" },
+      { "id": 3, "name": "HTML5" },
+      { "id": 4, "name": "CSS3" },
+      { "id": 5, "name": "Material UI" }
     ],
     "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
+      { "id": 1, "path": "todo-app-desktop.jpg" },
+      { "id": 2, "path": "todo-app-mobile.jpg" }
     ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
+    "githubLink": "https://github.com/abdelmawlaSouat/To-Do-App",
+    "siteLink": "https://to-do-app-xi.vercel.app/"
   },
   {
     "id": 3,
-    "name": "Project 3",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
+    "name": "Huddle Landing Page",
+    "description": "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.",
     "skills": [
       { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
+      { "id": 3, "name": "HTML5" },
+      { "id": 4, "name": "CSS3" },
+      { "id": 5, "name": "Material UI" }
     ],
     "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
+      { "id": 1, "path": "huddle-landing-page-desktop.jpg" },
+      { "id": 2, "path": "huddle-landing-page-mobile.jpg" }
     ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
+    "githubLink": "https://github.com/abdelmawlaSouat/Huddle-landing-page",
+    "siteLink": "https://huddle-landing-page-wheat.vercel.app/"
   },
   {
     "id": 4,
-    "name": "Project 4",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
+    "name": "Portfolio (v1.0)",
+    "description": "My first personal website. We can see some topics about me (skills, education), some projects and a contact section.",
     "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
+      { "id": 1, "name": "Vue.js" },
+      { "id": 3, "name": "HTML5" },
+      { "id": 4, "name": "CSS3" },
+      { "id": 5, "name": "Vuetify" }
     ],
     "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
+      { "id": 1, "path": "portfolio-v1-homepage-desktop.png" },
+      { "id": 3, "path": "portfolio-v1-content-desktop.png" },
+      { "id": 2, "path": "portfolio-v1-homepage-mobile.png" }
     ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
-  },
-  {
-    "id": 5,
-    "name": "Project 5",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
-    "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
-    ],
-    "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
-    ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
-  },
-  {
-    "id": 6,
-    "name": "Project 6",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
-    "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
-    ],
-    "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
-    ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
-  },
-  {
-    "id": 7,
-    "name": "Project 6",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
-    "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
-    ],
-    "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
-    ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
-  },
-  {
-    "id": 8,
-    "name": "Project 6",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
-    "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
-    ],
-    "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
-    ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
-  },
-  {
-    "id": 9,
-    "name": "Project 6",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?",
-    "skills": [
-      { "id": 1, "name": "React.js" },
-      { "id": 2, "name": "HTML" },
-      { "id": 3, "name": "Saas" }
-    ],
-    "gallery": [
-      { "id": 1, "path": "/images/profile.jpg" },
-      { "id": 2, "path": "/images/profile.jpg" },
-      { "id": 3, "path": "/images/profile.jpg" },
-      { "id": 4, "path": "/images/profile.jpg" },
-      { "id": 5, "path": "/images/profile.jpg" }
-    ],
-    "githubLink": "https://github.com/abdelmawlaSouat?tab=repositories",
-    "siteLink": "http://localhost:3000/"
+    "githubLink": "https://github.com/abdelmawlaSouat/Portfolio",
+    "siteLink": "https://abdelmawla-souat.vercel.app/"
   }
 ]

@@ -1,5 +1,5 @@
 .slider {
-  width: 400px;
+  width: 550px;
   text-align: center;
   overflow: hidden;
 }
@@ -16,8 +16,8 @@
 .slides div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 367px;
   margin-right: 50px;
   border-radius: 10px;
   background: var(--color-bg);

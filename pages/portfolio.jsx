@@ -4,13 +4,14 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:59:52 pm
- * Last Modified: 2021-03-26 6:05:14 pm
+ * Last Modified: 2021-03-28 3:02:28 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
 
 import { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Modal from '../components/Modal';
@@ -49,15 +50,24 @@ export default function Portfolio() {
         <Header title="Portfolio" subtitle="Showcasing some of my best work" />
         <section>
           {projects.map((item) => (
-            <motion.div
-              key={item.id}
-              className={styles.card}
-              onClick={() => generateModal(item)}
-              aria-hidden="true"
-              whileHover={{
-                scale: 1.07,
-              }}
-            />
+            <a href="#" key={item.id}>
+              <motion.div
+                aria-hidden="true"
+                className={styles.card}
+                onClick={() => generateModal(item)}
+                whileHover={{
+                  scale: 1.07,
+                }}
+              >
+                <Image
+                  src={`/images/projects/${item.gallery[0].path}`}
+                  alt={item.name}
+                  width="390"
+                  height="300"
+                  layout="intrinsic"
+                />
+              </motion.div>
+            </a>
           ))}
         </section>
       </motion.main>
