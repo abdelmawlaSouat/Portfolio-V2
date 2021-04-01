@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-03-24 4:35:10 pm
+ * Last Modified: 2021-04-01 10:18:01 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -91,6 +91,7 @@ export default function Home() {
             alt="Profile"
             width="480px"
             height="480px"
+            priority
           />
         </section>
       </motion.main>

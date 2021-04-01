@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-14 7:22:23 pm
- * Last Modified: 2021-03-28 4:00:20 pm
+ * Last Modified: 2021-04-01 10:17:24 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -26,6 +26,7 @@ export default function Slider({ items }) {
               src={`/images/projects/${item.path}`}
               alt={item.name}
               layout="fill"
+              priority
             />
           </div>
         ))}

@@ -80,7 +80,12 @@
     width: 100%;
   }
   .sliderContainer {
-    margin: 1rem 0;
+    margin: 4rem 0;
+  }
+
+  .content article p,
+  .content article .skillsList {
+    margin-bottom: 3rem;
   }
 
   .content article {
@@ -89,6 +94,27 @@
   }
 
   .btnsDiv {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .content article h3 {
+    font-size: 3.5rem;
+  }
+
+  .content article h4 {
+    font-size: 2.5rem;
+  }
+
+  .content article p {
+    font-size: 1.7rem;
+  }
+
+  .content .skillsList span {
+    font-size: 1.4rem !important;
+  }
+
+  .btnsDiv button {
+    font-size: 1.5rem;
+    margin: 0 2rem 0 0;
   }
 }

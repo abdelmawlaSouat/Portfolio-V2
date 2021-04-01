@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:59:52 pm
- * Last Modified: 2021-03-28 3:02:28 pm
+ * Last Modified: 2021-04-01 10:17:42 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -65,6 +65,7 @@ export default function Portfolio() {
                   width="390"
                   height="300"
                   layout="intrinsic"
+                  priority
                 />
               </motion.div>
             </a>
