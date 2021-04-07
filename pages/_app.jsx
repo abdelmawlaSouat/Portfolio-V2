@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-03-26 11:34:19 am
+ * Last Modified: 2021-04-05 9:36:26 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -29,7 +29,7 @@ function Portfolio({ Component, pageProps }) {
   return (
     <div className="app">
       <Component {...pageProps} />
-      <Footer name="Souat Abdelmawla" />
+      <Footer name="Abdelmawla Souat" />
     </div>
   );
 }

@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:51:18 am
- * Last Modified: 2021-03-24 7:15:33 pm
+ * Last Modified: 2021-04-05 9:31:05 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -41,7 +41,7 @@ export default function Contact() {
   return (
     <div>
       <Head>
-        <title>Contact me</title>
+        <title>Contact me | Abdel Souat</title>
       </Head>
       <motion.main
         className={styles.container}

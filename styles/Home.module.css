@@ -19,19 +19,15 @@
 }
 .content .job {
   display: flex;
-  /* align-items: center; */
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
   margin: 1rem 0 2rem 0;
-  /* background-color: blue; */
 }
 .container .jobsListContainer {
   height: 35px;
-  /* background-color: red; */
   overflow: hidden;
   margin-left: 0.5rem;
-  /* margin-top: 3px; */
 }
 
 .container .jobsList {
@@ -49,8 +45,13 @@
 }
 
 .profile {
-  width: 480px;
-  height: 480px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile img {
+  width: 413px;
+  height: 550px;
 }
 
 @keyframes wordSwitcher {
@@ -74,7 +75,24 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) and (min-width: 601px) {
+  .container {
+    margin: 2rem 5%;
+  }
+  .content .name {
+    font-size: 3rem;
+  }
+  .content .job {
+    font-size: 2rem;
+  }
+
+  .profile img {
+    width: 285px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .content {
     flex-direction: column-reverse;
     margin: 6vh 0;
@@ -84,27 +102,6 @@
     text-align: center;
   }
 
-  .content .job {
-    justify-content: center;
-    text-align: initial;
-    margin: 1rem 0 2rem 0;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 601px) {
-  .content .name {
-    font-size: 3.3rem;
-  }
-  .content .job {
-    font-size: 2rem;
-  }
-  .profile {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .container {
     margin: 1rem 1.5rem;
   }
@@ -112,14 +109,18 @@
     font-size: 2.2rem;
   }
   .content .job {
+    justify-content: center;
+    text-align: initial;
     font-size: 1.2rem;
+    margin: 1rem 0 2rem 0;
   }
   .container .jobsListContainer {
     height: 25px;
   }
-  .profile {
-    width: 300px;
-    height: 300px;
+
+  .profile img {
+    width: 262px;
+    height: 350px;
   }
 
   @keyframes wordSwitcher {

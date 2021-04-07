@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-04-01 10:18:01 pm
+ * Last Modified: 2021-04-07 11:13:00 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Abdel - Personal Portfolio</title>
+        <title>Abdel Souat | Frontend Developer </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -56,13 +56,13 @@ export default function Home() {
         </header>
         <section className={styles.content}>
           <article>
-            <h1 className={styles.name}>Souat Abdelmawla</h1>
+            <h1 className={styles.name}>Abdel Souat</h1>
             <div className={styles.job}>
               <span>I&apos;m a </span>
               <div className={styles.jobsListContainer}>
                 <ul className={styles.jobsList}>
                   <li>Frontend Developer</li>
-                  <li>Freelancer</li>
+                  <li>Freelance</li>
                 </ul>
               </div>
             </div>
@@ -85,14 +85,16 @@ export default function Home() {
               </Link>
             </div>
           </article>
-          <Image
-            className={styles.profile}
-            src="/images/profile.jpg"
-            alt="Profile"
-            width="480px"
-            height="480px"
-            priority
-          />
+          <aside className={styles.profile}>
+            <Image
+              src="/images/cover.png"
+              alt="Abdelmawla Souat"
+              width="auto"
+              height="auto"
+              layout="intrinsic"
+              priority
+            />
+          </aside>
         </section>
       </motion.main>
     </div>

@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-03-24 4:34:27 pm
+ * Last Modified: 2021-04-07 11:16:18 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -21,7 +21,7 @@ export default function AboutMe() {
   return (
     <div>
       <Head>
-        <title>About me</title>
+        <title>About me | Abdel Souat</title>
       </Head>
       <motion.main
         className={styles.container}
@@ -33,15 +33,15 @@ export default function AboutMe() {
         <Header title="About me." subtitle="Get to know me" />
         <section>
           <Image
-            src="/images/profile.jpg"
+            src="/images/profile.png"
             alt="Profile"
-            width="480px"
-            height="480px"
+            width="413px"
+            height="550px"
           />
           <article>
             <h3>Who am I ?</h3>
             <span className={styles.textXL}>
-              I&apos;m Abdelmawla Souat, a Front-end Developer
+              I&apos;m Abdel, a Front-end Developer
             </span>
             <p>
               I am a freelancer based in Belgium. After a cursus at 19 (42

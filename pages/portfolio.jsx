@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:59:52 pm
- * Last Modified: 2021-04-01 10:17:42 pm
+ * Last Modified: 2021-04-05 9:31:13 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -38,7 +38,7 @@ export default function Portfolio() {
   return (
     <div>
       <Head>
-        <title>Porfolio</title>
+        <title>Porfolio | Abdel Souat</title>
       </Head>
       <motion.main
         className={!isOpen ? styles.container : styles.hidden}
