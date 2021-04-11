@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-04-07 11:16:18 pm
+ * Last Modified: 2021-04-11 11:58:01 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -33,10 +33,11 @@ export default function AboutMe() {
         <Header title="About me." subtitle="Get to know me" />
         <section>
           <Image
+            className={styles.profileImg}
             src="/images/profile.png"
             alt="Profile"
-            width="413px"
-            height="550px"
+            width="350px"
+            height="467px"
           />
           <article>
             <h3>Who am I ?</h3>
@@ -44,11 +45,21 @@ export default function AboutMe() {
               I&apos;m Abdel, a Front-end Developer
             </span>
             <p>
-              I am a freelancer based in Belgium. After a cursus at 19 (42
-              network) and a rewarding internship in software development at
-              Niboo, I am aiming at a company that could not only trust me but
-              also allow me to grow as a developer. I have an overflowing
-              curiosity and a pronounced taste for learning.
+              I am a freelancer based in Belgium. I have a real interest in
+              building fast, responsive, and intuitive web applications by using
+              the best and modern practices. I will provide high-quality code
+              and the smile of my clients. That is why I spend my spare time
+              improving my programming skills.
+            </p>
+            <p>
+              On my level, I have strong skills in the 3 essentials (HTML5, CSS3
+              & Javascript). In addition to this, I have experiences with
+              Javascript frameworks (React.js & Vue.js), state management
+              libraries (Redux & VueX), server-side rendering (Next.js), CSS
+              libraries (Bootstrap, Vuetify & Material UI), backend development
+              (Node.js, Express.js & MongoDB), packages manager (npm & yarn),
+              testing tools (Jest, Enzyme & Cypress), and other tools (Git &
+              Webpack).
             </p>
             <div className={styles.moreInfos}>
               <div>

@@ -15,12 +15,17 @@
 }
 
 .container article {
-  width: 35%;
+  width: 40%;
   margin: 0 0 0 10rem;
+  font-size: 1.1rem;
 }
 
-.container article {
-  font-size: 1.1rem;
+.profileImg {
+  border-radius: 5%;
+}
+
+.container article p {
+  line-height: 1.5rem;
 }
 
 .moreInfos {
@@ -43,6 +48,22 @@
 
 .socialIcons svg {
   margin-right: 1rem;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  .moreInfos {
+    flex-direction: column;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0 0 0;
+  }
+  .moreInfos div {
+    margin: 5px 0;
+  }
+
+  .container article {
+    width: 50%;
+    margin: 0 0 0 5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

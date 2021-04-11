@@ -50,8 +50,9 @@
 }
 
 .profile img {
-  width: 413px;
-  height: 550px;
+  width: 350px;
+  height: 467px;
+  border-radius: 5%;
 }
 
 @keyframes wordSwitcher {

@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-04-07 11:13:00 pm
+ * Last Modified: 2021-04-12 12:47:03 am
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -62,7 +62,7 @@ export default function Home() {
               <div className={styles.jobsListContainer}>
                 <ul className={styles.jobsList}>
                   <li>Frontend Developer</li>
-                  <li>Freelance</li>
+                  <li>Freelancer</li>
                 </ul>
               </div>
             </div>
