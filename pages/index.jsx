@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-04-12 12:47:03 am
+ * Last Modified: 2021-04-12 9:52:26 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -40,7 +40,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Abdel Souat | Frontend Developer </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
 
       <motion.main
