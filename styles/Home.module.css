@@ -93,6 +93,20 @@
   }
 }
 
+@media only screen and (max-width: 600px) and (max-height: 700px) {
+  .profile img {
+    width: 230px;
+    height: 307px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-height: 701px) {
+  .profile img {
+    width: 262px;
+    height: 350px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .content {
     flex-direction: column-reverse;
@@ -117,11 +131,6 @@
   }
   .container .jobsListContainer {
     height: 25px;
-  }
-
-  .profile img {
-    width: 262px;
-    height: 350px;
   }
 
   @keyframes wordSwitcher {

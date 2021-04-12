@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-04-11 11:58:01 pm
+ * Last Modified: 2021-04-12 2:38:22 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -48,12 +48,12 @@ export default function AboutMe() {
               I am a freelancer based in Belgium. I have a real interest in
               building fast, responsive, and intuitive web applications by using
               the best and modern practices. I will provide high-quality code
-              and the smile of my clients. That is why I spend my spare time
-              improving my programming skills.
+              and the satisfaction of my clients. That is why I spend my spare
+              time improving my programming skills.
             </p>
             <p>
-              On my level, I have strong skills in the 3 essentials (HTML5, CSS3
-              & Javascript). In addition to this, I have experiences with
+              At the moment, I have strong skills in the 3 essentials (HTML5,
+              CSS3 & Javascript). In addition to this, I have experiences with
               Javascript frameworks (React.js & Vue.js), state management
               libraries (Redux & VueX), server-side rendering (Next.js), CSS
               libraries (Bootstrap, Vuetify & Material UI), backend development
