@@ -1,5 +1,22 @@
 [
   {
+    "id": 5,
+    "name": "Rock Paper Scissors Game",
+    "description": "Play Rock, Paper, Scissors, Lizard, Spock against the computer !",
+    "skills": [
+      { "id": 1, "name": "React.js" },
+      { "id": 2, "name": "State & Effect Hooks" },
+      { "id": 3, "name": "HTML5" },
+      { "id": 4, "name": "CSS3" },
+      { "id": 5, "name": "SCSS" }
+    ],
+    "gallery": [
+      { "id": 1, "path": "rock-paper-scissors-game-desktop-preview.jpg" }
+    ],
+    "githubLink": "https://github.com/abdelmawlaSouat/Rock-Paper-Scissors-Game",
+    "siteLink": "https://rock-paper-scissors-game-henna.vercel.app/"
+  },
+  {
     "id": 1,
     "name": "IP Address Tracker",
     "description": "This app is used to track an ip address. The user has 2 options, first he can set an ip address via the input field or the second, the app will track his position. After that, the app show his location, his timezone and his internet service provider.",
