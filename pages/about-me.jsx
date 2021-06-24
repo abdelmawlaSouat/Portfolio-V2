@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-12 8:35:21 pm
- * Last Modified: 2021-04-12 2:38:22 pm
+ * Last Modified: 2021-06-24 5:39:24 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -45,11 +45,10 @@ export default function AboutMe() {
               I&apos;m Abdel, a Front-end Developer
             </span>
             <p>
-              I am a freelancer based in Belgium. I have a real interest in
-              building fast, responsive, and intuitive web applications by using
-              the best and modern practices. I will provide high-quality code
-              and the satisfaction of my clients. That is why I spend my spare
-              time improving my programming skills.
+              I have a real interest in building fast, responsive, and intuitive
+              web applications by using the best and modern practices. I will
+              provide high-quality code and the satisfaction of my clients. That
+              is why I spend my spare time improving my programming skills.
             </p>
             <p>
               At the moment, I have strong skills in the 3 essentials (HTML5,
@@ -76,7 +75,7 @@ export default function AboutMe() {
               </div>
             </div>
             <div className={styles.articleFooter}>
-              <Link href="/files/Souat Abdelmawla - ENG.pdf">
+              <Link href="/files/Abdel Souat - CV.pdf">
                 <a target="_blank">
                   <button type="button">Download CV</button>
                 </a>

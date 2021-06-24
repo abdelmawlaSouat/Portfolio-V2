@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-10 7:32:15 pm
- * Last Modified: 2021-04-12 9:52:26 pm
+ * Last Modified: 2021-06-24 5:39:02 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -78,7 +78,7 @@ export default function Home() {
                   <FaGithub size="40" />
                 </a>
               </Link>
-              <Link href="/files/Souat Abdelmawla - ENG.pdf">
+              <Link href="/files/Abdel Souat - CV.pdf">
                 <a target="_blank">
                   <AiOutlineFilePdf size="40" />
                 </a>
