@@ -55,7 +55,7 @@
   border-radius: 5%;
 }
 
-@keyframes wordSwitcher {
+/* @keyframes wordSwitcher {
   0% {
     margin-top: 0px;
   }
@@ -74,7 +74,7 @@
   100% {
     margin-top: -40px;
   }
-}
+} */
 
 @media (max-width: 1200px) and (min-width: 601px) {
   .container {
@@ -133,7 +133,7 @@
     height: 25px;
   }
 
-  @keyframes wordSwitcher {
+  /* @keyframes wordSwitcher {
     0% {
       margin-top: 0px;
     }
@@ -152,5 +152,5 @@
     100% {
       margin-top: -23px;
     }
-  }
+  } */
 }
