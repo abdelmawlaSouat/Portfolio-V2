@@ -4,7 +4,7 @@
  * Email: abdelmawla.souat@gmail.com
  * -----
  * Created at: 2021-02-13 9:51:18 am
- * Last Modified: 2021-04-05 9:31:05 pm
+ * Last Modified: 2021-07-15 2:40:25 pm
  * -----
  * Copyright (c) 2021 Yuei
  */
@@ -108,8 +108,8 @@ export default function Contact() {
           <aside>
             <h3>Contact info</h3>
             <p>
-              Always available for freelance work if the right project comes
-              along, Feel free to contact me!
+              Always available for work if the right project comes along, Feel
+              free to contact me!
             </p>
             <div className={styles.contactTypes}>
               <Link href="tel:+32484697707">
